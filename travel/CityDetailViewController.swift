@@ -8,14 +8,16 @@
 
 import UIKit
 import FirebaseDatabase
+import Kingfisher
+import FirebaseStorage
+
 
 
 
 class CityDetailViewController: UIViewController ,CityDataDelegate{
     
     
-
-
+let storage = FIRStorage.storage().reference(forURL:"gs://travelapp-31a9e.appspot.com")
     @IBOutlet weak var cityImage: UIImageView!
     
     @IBOutlet weak var cityName: UILabel!
@@ -37,6 +39,11 @@ class CityDetailViewController: UIViewController ,CityDataDelegate{
         self.cityName.text = " \(selectedCity["DestinationCity"]!) (\(selectedCity["Country"]!))"
         self.countryName.text = "\(((selectedCity["Country"]!)   as AnyObject).uppercased!)"
        
+        let imagePath = "\(selectedCity["DestinationCity"]!).jpg"
+        let url = storage.child(imagePath)
+        print(url.name)
+        self.cityImage.kf.setImage(with: URL(string:"gs://travelapp-31a9e.appspot.com/\(url.name)"))
+
 
         
         // Do any additional setup after loading the view.

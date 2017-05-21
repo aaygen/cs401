@@ -8,6 +8,7 @@ target 'travel' do
  pod 'Firebase/Auth'
  pod 'Firebase/Database'
 pod 'Kingfisher', '~> 3.0'
+pod 'Firebase/Storage'
   # Pods for travel
 
 end

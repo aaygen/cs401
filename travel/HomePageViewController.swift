@@ -121,7 +121,7 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
             })
             
  */
-    var url = "http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/TR/\(currency)/en-US/\(departureLocation.text)/anywhere/\(departure)/\(returnD)?apiKey=at812187236421337946364002643367"
+    var url = "http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/TR/\(currency)/en-US/\(departureLocation.text!)/anywhere/\(departure)/\(returnD)?apiKey=at812187236421337946364002643367"
         
          DispatchQueue.main.async {
        
