@@ -27,6 +27,7 @@ class CityViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
         self.title = "DESTINATIONS"
         cityTableView.dataSource = self
+        
         //cityDataSource.delegate = self
 
         // Do any additional setup after loading the view.
