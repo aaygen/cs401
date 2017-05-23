@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "location-arrow-flat kopya.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "world_travel.png",
       "scale" : "2x"
     },
     {

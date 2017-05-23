@@ -58,6 +58,7 @@ class ViewController: UIViewController ,UITableViewDelegate{
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor (patternImage:UIImage(named : "travelling-1.png")!)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

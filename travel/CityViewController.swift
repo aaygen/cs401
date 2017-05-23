@@ -2,7 +2,7 @@
 //  CityViewController.swift
 //  travel
 //
-//  Created by Student on 23/04/2017.
+//  Created by Duru Coskun on 23/04/2017.
 //  Copyright © 2017 Ata Aygen. All rights reserved.
 //
 
@@ -27,6 +27,9 @@ class CityViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
         self.title = "DESTINATIONS"
         cityTableView.dataSource = self
+        
+        self.view.backgroundColor = UIColor (patternImage:UIImage(named : "city.png")!)
+        
         //cityDataSource.delegate = self
 
         // Do any additional setup after loading the view.
@@ -122,7 +125,8 @@ class CityViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         if  let nextView = segue.destination as? CityDetailViewController{
             nextView.selectedCity = (cityDataSource.destinations?[indexPath.row])!
-            
+            nextView.cityImage?.kf.setImage(with:URL(string:"gs://travelapp-31a9e.appspot.com/New York.jpg"))
+
         }
         
         
