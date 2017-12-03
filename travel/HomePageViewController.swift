@@ -22,7 +22,7 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
     var currentCityName: String!
     var currency: String = ""
     var cityCode : String = ""
-    
+    var userUid : String!
     @IBOutlet weak var departureLocation: UITextField!
     
     @IBOutlet weak var departureDate: UIDatePicker!
@@ -40,7 +40,9 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func go(_ sender: UIButton) {
-        let vc = self.appDelegate.getCurrentViewController()
+      //  let vc = self.appDelegate.getCurrentViewController()
+        let vc = self as! HomePageViewController
+        
         goAction: do{
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -96,25 +98,17 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
             
             ref.child("AIRPORTS").observeSingleEvent(of: .value, with: { (snapshot) in
                 
-                
                 departureAirport = snapshot.childSnapshot(forPath: "\(self.departureLocation.text!)").children.nextObject().debugDescription
                 let rng = departureAirport.index(departureAirport.startIndex, offsetBy: 31)..<departureAirport.index(departureAirport.endIndex, offsetBy: -1)
                 departureAirport = departureAirport.substring(with: rng)
                 print(departureAirport)
-                
-                
+               
                 url = "http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/TR/\(self.currency)/en-US/\(departureAirport)/anywhere/\(departure)/\(returnD)?apiKey=at812187236421337946364002643367"
                 print(url)
-                
-                self.citydata.loadCities(url: url, code: departureAirport, vc: vc as! HomePageViewController)
-                
-                
+          
+            self.citydata.loadCities(url: url, code: departureAirport, vc: vc as!HomePageViewController)
             })
-            
-            
-            
         }
-        
     }
     
     func goToNextView() {
@@ -158,7 +152,7 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         
-        
+        self.view.backgroundColor = UIColor (patternImage:UIImage(named : "travelling-1.png")!)
         // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {
@@ -178,6 +172,7 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
         if  let nextView = segue.destination as? CityViewController{
             nextView.cityDataSource = citydata
             nextView.currency = currency
+            nextView.userUid = self.userUid
             
         }
         

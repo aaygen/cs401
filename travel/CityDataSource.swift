@@ -39,8 +39,7 @@ class CityDataSource: NSObject {
         
         destinations?.removeAll()
         let semaphore = DispatchSemaphore(value: 0);
-        
-        let networkSession = URLSession.shared
+                  let networkSession = URLSession.shared
         
         var req = URLRequest(url: URL(string: url)!)
         
@@ -50,6 +49,7 @@ class CityDataSource: NSObject {
             
             let jsonReadable = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             print(jsonReadable!)
+            print("CITY DATA SOURCE JSON")
             
             
             

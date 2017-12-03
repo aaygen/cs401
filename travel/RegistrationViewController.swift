@@ -12,8 +12,8 @@ import FirebaseDatabase
 
 class RegistrationViewController: UIViewController {
 
-    
-    var ref = FIRDatabase.database().reference()
+    var ref : FIRDatabaseReference!
+
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -42,8 +42,8 @@ class RegistrationViewController: UIViewController {
             if user != nil {
                 
                 // SET USERNAME and Email
-               self.ref.child("USERS").child((user?.uid)!).setValue(["username":self.username.text,"email":self.email.text])
-                
+              
+              self.ref.root.child("USERS").child((user?.uid)!).setValue(["username":self.username.text,"email":self.email.text])
                 
                 //user is found
                 self.performSegue(withIdentifier: "showLoginPage", sender: self)
@@ -59,8 +59,9 @@ class RegistrationViewController: UIViewController {
 
 
     override func viewDidLoad() {
+        ref = FIRDatabase.database().reference()
         super.viewDidLoad()
-
+self.view.backgroundColor = UIColor (patternImage:UIImage(named : "travelling-1.png")!)
         // Do any additional setup after loading the view.
     }
 
@@ -79,5 +80,9 @@ class RegistrationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+    }
 
 }

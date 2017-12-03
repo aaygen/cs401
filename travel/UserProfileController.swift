@@ -7,3 +7,21 @@
 //
 
 import Foundation
+import UIKit
+
+class UserProfileController: UIViewController{
+    
+    var mail : String!
+    var user: String!
+    @IBOutlet weak var userEmail: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var profilePic: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+        userEmail?.text = mail
+        userName?.text = user
+        
+    }
+}
