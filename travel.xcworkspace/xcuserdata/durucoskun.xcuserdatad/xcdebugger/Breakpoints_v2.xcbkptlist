@@ -17,6 +17,41 @@
             endingLineNumber = "162"
             landmarkName = "getPlaces(placeArray:)"
             landmarkType = "7">
+<<<<<<< HEAD
+=======
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "travel.CityDataSource.getPlaces (placeArray : __ObjC.NSArray) -&gt; ()"
+                  moduleName = "travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/cs401/travel/CityDataSource.swift"
+                  timestampString = "516980899.179427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "7151">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "travel.CityDataSource.getPlaces (placeArray : __ObjC.NSArray) -&gt; ()"
+                  moduleName = "travel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/cs401/travel/CityDataSource.swift"
+                  timestampString = "516980899.200718"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "9244">
+               </Location>
+            </Locations>
+>>>>>>> origin/master
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,6 +67,25 @@
             startingLineNumber = "69"
             endingLineNumber = "69"
             landmarkName = "loadCities(url:code:vc:)"
+<<<<<<< HEAD
+=======
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "travel/CityDetailViewController.swift"
+            timestampString = "517014859.330224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+>>>>>>> origin/master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,7 +96,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "travel/CityDetailViewController.swift"
+<<<<<<< HEAD
             timestampString = "517148217.988712"
+=======
+            timestampString = "517014602.534001"
+>>>>>>> origin/master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -55,8 +113,13 @@
                   symbolName = "travel.CityDetailViewController.__deallocating_deinit"
                   moduleName = "travel"
                   usesParentBreakpointCondition = "Yes"
+<<<<<<< HEAD
                   urlString = "file:///Users/durucoskun/Downloads/seniorProject/travel/CityDetailViewController.swift"
                   timestampString = "533662726.700563"
+=======
+                  urlString = "file:///Applications/cs401/travel/CityDetailViewController.swift"
+                  timestampString = "516980899.305019"
+>>>>>>> origin/master
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -70,6 +133,7 @@
                   symbolName = "travel.CityDetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; travel.CityDetailViewController"
                   moduleName = "travel"
                   usesParentBreakpointCondition = "Yes"
+<<<<<<< HEAD
                   urlString = "file:///Users/durucoskun/Downloads/seniorProject/travel/CityDetailViewController.swift"
                   timestampString = "533662726.705402"
                   startingColumnNumber = "9223372036854775807"
@@ -77,6 +141,15 @@
                   startingLineNumber = "21"
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "78">
+=======
+                  urlString = "file:///Applications/cs401/travel/CityDetailViewController.swift"
+                  timestampString = "516980899.312954"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "72">
+>>>>>>> origin/master
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -85,8 +158,13 @@
                   symbolName = "travel.CityDetailViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; travel.CityDetailViewController"
                   moduleName = "travel"
                   usesParentBreakpointCondition = "Yes"
+<<<<<<< HEAD
                   urlString = "file:///Users/durucoskun/Downloads/seniorProject/travel/CityDetailViewController.swift"
                   timestampString = "533662726.710931"
+=======
+                  urlString = "file:///Applications/cs401/travel/CityDetailViewController.swift"
+                  timestampString = "516980899.319008"
+>>>>>>> origin/master
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -100,8 +178,13 @@
                   symbolName = "travel.CityDetailViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;travel.CityDetailViewController&gt;"
                   moduleName = "travel"
                   usesParentBreakpointCondition = "Yes"
+<<<<<<< HEAD
                   urlString = "file:///Users/durucoskun/Downloads/seniorProject/travel/CityDetailViewController.swift"
                   timestampString = "533662726.716065"
+=======
+                  urlString = "file:///Applications/cs401/travel/CityDetailViewController.swift"
+                  timestampString = "516980899.324648"
+>>>>>>> origin/master
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -115,6 +198,7 @@
                   symbolName = "travel.CityDetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;travel.CityDetailViewController&gt;"
                   moduleName = "travel"
                   usesParentBreakpointCondition = "Yes"
+<<<<<<< HEAD
                   urlString = "file:///Users/durucoskun/Downloads/seniorProject/travel/CityDetailViewController.swift"
                   timestampString = "533662726.721217"
                   startingColumnNumber = "9223372036854775807"
@@ -122,6 +206,15 @@
                   startingLineNumber = "21"
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "35">
+=======
+                  urlString = "file:///Applications/cs401/travel/CityDetailViewController.swift"
+                  timestampString = "516980899.330915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "31">
+>>>>>>> origin/master
                </Location>
             </Locations>
          </BreakpointContent>

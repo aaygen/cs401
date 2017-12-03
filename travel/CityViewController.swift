@@ -126,8 +126,12 @@ class CityViewController: UIViewController,UITableViewDataSource,UITableViewDele
         if  let nextView = segue.destination as? CityDetailViewController{
             nextView.selectedCity = (cityDataSource.destinations?[indexPath.row])!
             nextView.cityImage?.kf.setImage(with:URL(string:"gs://travelapp-31a9e.appspot.com/New York.jpg"))
+<<<<<<< HEAD
             nextView.userUid = self.userUid
             
+=======
+
+>>>>>>> origin/master
         }
         
         

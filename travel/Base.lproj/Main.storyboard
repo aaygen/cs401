@@ -25,7 +25,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19f-B3-S6l">
                                 <rect key="frame" x="141" y="289" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.10237279534339905" green="0.45834657549858093" blue="0.94911730289459229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ay-ho-s2E">
@@ -47,7 +47,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-ec-mGO">
                                 <rect key="frame" x="141" y="167" width="131" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.10237279534339905" green="0.45834657549858093" blue="0.94911730289459229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMb-Nm-gQW">
@@ -66,7 +66,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdo-Ud-E8p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdo-Ud-E8p">
                                 <rect key="frame" x="7" y="64" width="363" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="adsklfjkldfjlkgjkldfjklfdg"/>
@@ -97,6 +97,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="19f-B3-S6l" secondAttribute="trailing" constant="121" id="qS2-Qd-Rre"/>
                             <constraint firstItem="nMb-Nm-gQW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="scC-BL-Nye"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Jdo-Ud-E8p"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="rKe-sf-4ku"/>
                     <connections>
@@ -383,10 +388,16 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                             </datePicker>
+<<<<<<< HEAD
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Maxium Price" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y34-Td-V4x">
                                 <rect key="frame" x="126" y="375" width="162" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+=======
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Maximum Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y34-Td-V4x">
+                                <rect key="frame" x="126" y="375" width="162" height="30"/>
+                                <attributedString key="attributedText"/>
+>>>>>>> origin/master
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHZ-M3-YGy">
@@ -464,6 +475,14 @@
                             <constraint firstItem="ptV-hU-uRo" firstAttribute="leading" secondItem="t3h-rU-s9A" secondAttribute="leading" id="vPg-2h-qyy"/>
                             <constraint firstItem="xyr-8V-LPv" firstAttribute="top" secondItem="y34-Td-V4x" secondAttribute="bottom" constant="51" id="wuc-Kn-zTI"/>
                         </constraints>
+<<<<<<< HEAD
+=======
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CUh-qS-dH9"/>
+                            </mask>
+                        </variation>
+>>>>>>> origin/master
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Nas-Os-6cl"/>
                     <connections>
@@ -477,7 +496,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSz-Sn-xCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="1829" y="139"/>
+=======
+            <point key="canvasLocation" x="1829.5999999999999" y="138.98050974512745"/>
+>>>>>>> origin/master
         </scene>
         <!--City View Controller-->
         <scene sceneID="1wE-el-VU4">
@@ -571,6 +594,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="z2P-TK-7qr"/>
                                 </constraints>
+<<<<<<< HEAD
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -583,6 +607,20 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+=======
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97159330234322627" green="1" blue="0.94746207892780521" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mso-7m-xpA">
+                                <rect key="frame" x="47" y="623" width="311" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="aDz-rf-DFt"/>
+                                    <constraint firstAttribute="height" constant="74" id="pWH-N8-9yA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97159330229999996" green="1" blue="0.9474620789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+>>>>>>> origin/master
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wF-pg-exd">
@@ -647,7 +685,7 @@
         <image name="profileIcon" width="181" height="190"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Umy-RW-WiQ"/>
         <segue reference="RLZ-oj-kHi"/>
+        <segue reference="Umy-RW-WiQ"/>
     </inferredMetricsTieBreakers>
 </document>
